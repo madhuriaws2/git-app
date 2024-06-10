@@ -6,11 +6,11 @@ pipeline {
 		}
 	}
 stages {
-/*	stage ('install'){
+	stage ('install'){
 		steps {
 				sh "yum install httpd -y"
 		}
-	} */
+	} 
 	stage ('start'){
 	    steps {
 	            sh "service httpd restart"
